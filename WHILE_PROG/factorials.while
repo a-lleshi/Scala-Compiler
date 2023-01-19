@@ -1,0 +1,10 @@
+write "Input n please";
+read n;
+write "The factorial of n are";
+total := 1;
+
+for i := 1 upto n do {
+    total := total * i
+};
+
+write total
