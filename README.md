@@ -13,6 +13,7 @@ You will need to have the following installed on your machine:
 - Ammonite 2.4.0
 - Jasmin Jar File (included in the repo)
 - some WHILE programs (included in the repo, can write your own following the syntax :))
+- Depending on your OS, you may need to change `beginning` prelude variable from `ldc 10` for Linux/MacOS to `ldc 13` for Windows (this has been commented in the code in `compiler.sc`)
 
 ### Commands to run the project
 
@@ -37,12 +38,19 @@ You can then run the .j file using the Jasmin compiler:
 java -jar jasmin.jar "WHILE_FILE_NAME.j"
 ```
 
-#### Interpreter
-
-
-
 #### Parser
 
+To parse a WHILE program at command line, you can run the following commands:
+
+```bash
+amm parser.sc "WHILE_FILE_NAME.while"
+```
 
 #### Lexer
+
+To lex a WHILE program at command line, you can run the following commands:
+
+```bash
+amm lexer.sc "WHILE_FILE_NAME.while"
+```
 
